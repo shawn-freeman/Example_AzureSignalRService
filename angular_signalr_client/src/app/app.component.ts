@@ -18,7 +18,7 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void {
     let connection = new signalR.HubConnectionBuilder()
-        .withUrl("/dashboardHub")
+        .withUrl("https://localhost:7168/dashboardHub")
         .build();
 
     connection.on("send", data => {
