@@ -21,11 +21,11 @@ export class AppComponent implements OnInit {
         .withUrl("https://localhost:7168/dashboardHub")
         .build();
 
-    connection.on("send", data => {
-        console.log(data);
+    connection.on("ReceiveMessage", data => {
+        console.log('connection.on ->', data);
     });
 
     connection.start()
-        .then(() => connection.invoke("send", "Hello"));
+        .then(() => connection.invoke("SendMessage", "User", "Hello"));
   }
 }
