@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureSignalRServiceCoreApi", "AzureSignalRServiceCoreApi\AzureSignalRServiceCoreApi.csproj", "{0971BCC5-6070-4C05-98F1-8583E73D32B8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureSignalRServiceCoreApi", "AzureSignalRServiceCoreApi\AzureSignalRServiceCoreApi.csproj", "{0971BCC5-6070-4C05-98F1-8583E73D32B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureSignalRServiceDotNet48Api", "AzureSignalRServiceDotNet48Api\AzureSignalRServiceDotNet48Api.csproj", "{5E4CB34B-23C4-45C0-9817-8CB4A5412AA2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{0971BCC5-6070-4C05-98F1-8583E73D32B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0971BCC5-6070-4C05-98F1-8583E73D32B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0971BCC5-6070-4C05-98F1-8583E73D32B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E4CB34B-23C4-45C0-9817-8CB4A5412AA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E4CB34B-23C4-45C0-9817-8CB4A5412AA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E4CB34B-23C4-45C0-9817-8CB4A5412AA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E4CB34B-23C4-45C0-9817-8CB4A5412AA2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
