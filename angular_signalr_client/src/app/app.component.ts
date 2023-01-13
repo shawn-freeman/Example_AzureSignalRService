@@ -48,7 +48,7 @@ export class AppComponent implements OnInit {
     connection.start()
         .then(() => connection.invoke("SendMessage", "User", "Hello"))
         .catch((error) => {
-
+          console.log('connection.start error ->', error);
         });
   }
 
