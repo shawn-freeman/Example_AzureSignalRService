@@ -37,7 +37,7 @@ export class AppComponent implements OnInit {
 
   initSignalRDotNet48Api(){
     let connection = new signalR.HubConnectionBuilder()
-        .withUrl("https://localhost:44359/dashboardHub")
+        .withUrl("https://localhost:58556/signalr/dashboardHub")
         .build();
 
     connection.on("ReceiveMessage", data => {
