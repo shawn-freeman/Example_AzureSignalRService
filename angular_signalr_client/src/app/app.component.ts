@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
-const signalR = require("@microsoft/signalr");
+const microsoftSignalR = require("@microsoft/signalr");
+const aspnetSignalR = require("@aspnet/signalr");
 
 @Component({
   selector: 'app-root',
@@ -23,7 +24,7 @@ export class AppComponent implements OnInit {
   }
 
   initSignalRCoreApi(){
-    let connection = new signalR.HubConnectionBuilder()
+    let connection = new microsoftSignalR.HubConnectionBuilder()
         .withUrl("https://localhost:7168/dashboardHub")
         .build();
 
@@ -36,7 +37,7 @@ export class AppComponent implements OnInit {
   }
 
   initSignalRDotNet48Api(){
-    let connection = new signalR.HubConnectionBuilder()
+    let connection = new aspnetSignalR.HubConnectionBuilder()
         .withUrl("https://localhost:44359/signalr/dashboardHub")
         .build();
 
@@ -45,7 +46,10 @@ export class AppComponent implements OnInit {
     });
 
     connection.start()
-        .then(() => connection.invoke("SendMessage", "User", "Hello"));
+        .then(() => connection.invoke("SendMessage", "User", "Hello"))
+        .catch((error) => {
+
+        });
   }
 
 
